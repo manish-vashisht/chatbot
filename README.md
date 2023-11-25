@@ -8,6 +8,15 @@ This project is a chatbot application built using OpenAI for natural language pr
 - **Real-time Communication:** Powered by Socket.IO for seamless real-time messaging.
 - **User Authentication:** Allows users to register and log in securely.
 
+
+## Previews:
+
+![](https://firebasestorage.googleapis.com/v0/b/disney-plus-hotstar-clon-13914.appspot.com/o/images%2Fhomepage.png?alt=media&token=13943317-cd60-416d-8389-e8e98340fe60)
+![](https://firebasestorage.googleapis.com/v0/b/disney-plus-hotstar-clon-13914.appspot.com/o/images%2Flogin.png?alt=media&token=3a02d0d3-f09d-48fa-9cc2-e03f171b5c1b)
+![](https://firebasestorage.googleapis.com/v0/b/disney-plus-hotstar-clon-13914.appspot.com/o/images%2Fregister.png?alt=media&token=ec0dbbe4-e16e-4e32-9378-4af736f5250a)
+![](https://firebasestorage.googleapis.com/v0/b/disney-plus-hotstar-clon-13914.appspot.com/o/images%2Fchats.png?alt=media&token=5a1f7db4-f31f-41d8-8e82-8e150c25074d)
+
+
 ## Installation
 
 1. Clone the repository:
