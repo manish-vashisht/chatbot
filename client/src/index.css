@@ -1,0 +1,499 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --header-background: #adb5bd;
+  --header-color: #fff;
+  --body-background: #fff;
+  --text-dark: #4f5a64;
+  --text-light: #798a9a;
+  --button-red: #892020;
+  --button-green: #064120;
+  --border-color: #bdbdbd;
+
+  --line-height: 1.5rem;
+  --letter-spacing: 1px;
+  --normal-font: 16px;
+  --h1-font-size: 26px;
+  --h2-font-size: 24px;
+  --h3-font-size: 22px;
+  --h4-font-size: 20px;
+  --form-font-size: 18px;
+  --bigger-font-size: 36px;
+
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  font-family: "Poppins" sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background: var(--body-background);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  font-size: var(--form-font-size);
+}
+
+/* Header section */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  background: var(--header-background);
+  color: var(--header-color);
+  align-items: center;
+  padding: 40px;
+  font-size: var(--h2-font-size);
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: var(--header-color);
+}
+
+.logo img {
+  width: 48px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-section span {
+  font-size: var(--h2-font-size);
+  color: var(--header-color);
+  cursor: pointer;
+}
+
+/* Card design */
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+  height: max-content;
+  margin: auto auto;
+  background: var(--header-color);
+  box-shadow: var(--box-shadow);
+  /* padding: 20px; */
+  /* border-radius: 10px; */
+}
+
+/* Home section */
+.homepage-container {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+
+.home-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 10;
+}
+
+.home-intro {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.home-intro ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.home-intro button {
+  width: max-content;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: var(--button-green);
+  color: var(--header-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.home-intro button:hover {
+  opacity: 0.7;
+}
+
+.home-banner {
+  flex: 0.3;
+  padding: 20px;
+}
+
+.home-banner img {
+  width: 350px;
+}
+
+/* Password input section */
+.password-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding-right: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.password-box input {
+  font-size: var(--form-font-size);
+  width: 100%;
+  padding: 15px;
+  border-radius: 0 !important;
+  border-top-left-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.password-box .eye-icon {
+  font-size: var(--form-font-size);
+  cursor: pointer;
+}
+
+/* Login page section */
+.login-container {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  font-size: var(--form-font-size);
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container > .card {
+  border-radius: 10px;
+}
+
+form input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: var(--form-font-size);
+  border: 1px solid var(--border-color);
+}
+
+form .login-btn {
+  height: 60px;
+  padding: 20px auto;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  background: var(--button-green);
+  color: var(--header-color);
+  font-size: var(--form-font-size);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+form .login-btn:hover {
+  opacity: 0.7;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: var(--form-font-size);
+}
+
+.strong-password-container ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Chat page section */
+.message {
+  display: flex;
+}
+
+.new-chat-button {
+  display: block;
+}
+
+.chatpage-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.chatpage-container > .card {
+  height: 100%;
+  width: 100%;
+}
+
+.chat-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat-intro {
+  display: flex;
+  width: 85%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat-intro-inner {
+  padding-left: 10rem;
+  width: 100%;
+}
+
+.chat-intro-container {
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.chat-intro-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat-intro-container::-webkit-scrollbar-thumb {
+  background-color: #dee2e6;
+  border-radius: 5px;
+}
+
+.chat-intro-heading {
+  /* border-bottom: 1px solid black; */
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.chat-banner {
+  display: flex;
+  justify-content: flex-start;
+  height: 100%;
+  width: 17%;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid rgb(242, 237, 237);
+  background-color: #000;
+}
+
+.chat-banner-upper {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.previous-chats {
+  margin-top: 10px;
+  height: 100%;
+}
+
+.previous-chats > h1 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.chat-banner button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: #000;
+  color: var(--header-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.chat-banner button:hover {
+  background-color: #777;
+  opacity: 0.7;
+}
+
+.chat-conversation {
+  width: 100%;
+  height: 75vh;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+}
+
+.chat-conversation > div {
+  margin: 5px 0;
+}
+
+.side-chat-container {
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.side-chats {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.side-chats::-webkit-scrollbar {
+  width: 5px;
+}
+
+.side-chats::-webkit-scrollbar-thumb {
+  background-color: #dee2e6;
+  border-radius: 5px;
+}
+
+.side-chat-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: all 100ms ease-in;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.side-chat-container:hover {
+  background-color: rgba(69, 89, 164, 0.5);
+  cursor: pointer;
+}
+
+.chat-delete {
+  cursor: pointer;
+  transition: all 250ms ease-in-out;
+}
+
+.chat-delete:hover {
+  color: #fff;
+}
+
+.chat-profile {
+  height: 30px;
+  margin-right: 20px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.arrow:hover {
+  color: black;
+}
+
+.close {
+  transform: rotate(180deg);
+}
+
+.user-chat-item {
+  display: flex;
+  padding: 10px;
+  color: var(--text-dark);
+  gap: 10px;
+}
+
+.user-chat-item p {
+  font-size: var(--form-font-size);
+}
+
+.assistant-chat-item {
+  display: flex;
+  padding: 10px;
+  color: var(--text-light);
+  gap: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.assistant-chat-item p {
+  font-size: var(--form-font-size);
+}
+
+.submit-conversation {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  margin-top: auto;
+  padding-right: 20px;
+  position: relative;
+}
+
+.submit-conversation input {
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: var(--form-font-size);
+  border: 1px solid var(--border-color);
+}
+
+.submit-conversation button {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: var(--bigger-font-size);
+}
+
+.submit-conversation button:hover {
+  cursor: pointer;
+}
